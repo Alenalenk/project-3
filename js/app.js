@@ -48,9 +48,14 @@ if(backBtn) {
 const headerBtn = document.querySelector('.header__button');
 const headerPhone = document.querySelector('.header__phone');
 const parentOriginal = document.querySelector('.header__contacts');
-const parent = document.querySelector('.header__list')
+const parent = document.querySelector('.header__list');
 
-window.addEventListener('resize', function(e){
+
+window.addEventListener('resize', changeWrapper);
+
+changeWrapper();
+
+function  changeWrapper(){
     const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     
     if(viewport_width < 778){
