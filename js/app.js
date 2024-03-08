@@ -65,7 +65,7 @@ function  changeWrapper(){
         parentOriginal.insertBefore(headerBtn, parentOriginal.children[0]);
         parentOriginal.insertBefore(headerPhone, parentOriginal.children[2])
     }
-})
+}
 
 //Попап
 const popupLinks = document.querySelectorAll('.popup-button');
